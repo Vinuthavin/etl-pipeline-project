@@ -17,3 +17,5 @@ etl-pipeline-project/
 │
 └── README.md
 ```
+## 🗄️ Database Integration
+Data is loaded into SQLite database (`employees.db`) and queried using SQL.
