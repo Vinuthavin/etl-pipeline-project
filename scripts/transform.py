@@ -1,12 +1,21 @@
 from extract import extract
+import logging
 
 def transform():
-    df = extract()
-    
-    # Example transformation
-    df['salary'] = df['salary'] * 1.1
-    
-    return df
+    try:
+        df = extract()
+        
+        logging.info("Starting transformation")
 
-if __name__ == "__main__":
-    print(transform().head())
+        # Add bonus column
+        df['bonus'] = df['salary'] * 0.2
+
+        # Filter IT department
+        df = df[df['department'] == 'IT']
+
+        logging.info("Transformation completed")
+        return df
+
+    except Exception as e:
+        logging.error(f"Error in transform: {e}")
+        raise

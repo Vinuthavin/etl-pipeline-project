@@ -1,0 +1,5 @@
+2026-04-20 15:06:01,446 - INFO - ETL process started
+2026-04-20 15:06:01,457 - INFO - Data extracted successfully
+2026-04-20 15:06:01,457 - INFO - Starting transformation
+2026-04-20 15:06:01,463 - INFO - Transformation completed
+2026-04-20 15:06:01,465 - INFO - Data loaded successfully
